@@ -1,8 +1,12 @@
 package com.example.model
 
-@NoArg
+import jakarta.inject.Singleton
+
+@Singleton
 data class FailureProbability(
         val wingLength: String,
         val wingSpan: String,
-        val wingMaterial: String
+        val wingThick: String,
+        val wingDensity: String,
+        val wingflowLimit: String
 )

@@ -33,5 +33,4 @@ class DefaultFailureProbability(): FailureProbabilityService {
     private fun calculeteInertiaMoment(wingLength: Double, wingThick: Double): Double{
         return  (wingLength * wingThick.pow(3.0))/12
     }
-
 }

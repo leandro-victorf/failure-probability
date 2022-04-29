@@ -11,14 +11,12 @@ import com.example.service.FailureProbabilityService as FailureProbabilityServic
 class FailureProbabilityController(@Inject private val failureProbabilityService: FailureProbabilityService1){
 
     @Get
-    fun getfailureProbability(structure:FailureProbability
+    fun getfailureProbability(structure:FailureProbability): String {
 //        @QueryValue("wing-length") wingLength: String,
 //        @QueryValue("wing-span") wingSpan: String,
 //        @QueryValue("wing-thick") wingThick: String,
 //        @QueryValue("wing-density") wingDensity: String,
 //        @QueryValue("wingflow-limit") wingflowLimit: String
-
-    ): String {
         return failureProbabilityService.calculateFailureProbability(structure)
     }
 }
